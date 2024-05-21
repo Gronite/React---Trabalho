@@ -154,15 +154,6 @@ ul {
   place-items: center;
 }
 
-
-
-.lista::after {
-  position: absolute;
-  content: url("/img/icons8-lista-de-tarefas.gif");
-  right: 20px;
-  top: 28px;
-}
-
 .lista h2 {
   margin-bottom: 30px;
 }
