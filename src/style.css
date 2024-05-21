@@ -1,0 +1,210 @@
+body {
+  display: grid;
+  height: auto;
+  margin: 0px;
+  animation: mudarfundo 1s linear infinite alternate;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+
+.lista-tarefas {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffee;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 10px rgba(68, 23, 114, 1);
+}
+
+@keyframes mudarfundo {
+  0% {
+    background-color: rgba(68, 23, 114, 1);
+  }
+  100% {
+    background-color: rgba(38, 23, 114, 1);
+  }
+}
+
+.adiciona, .lista-categorias {
+  
+  position: relative;
+  background-color:#ffffee;
+  width: 425px;
+  padding: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 
+    0px 0px 50px 10px rgba(38, 23, 114, 1);
+  border-width: 1px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.input-comentarios {
+  display: grid;
+  gap: 10px;
+  place-items: center;
+  width: auto;
+}
+
+.input-comentarios input, .input-comentarios textarea{
+  width: 90%;
+}
+
+.div-tarefa, .editando-tarefa {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-editando-tarefa {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.div-tarefa button {
+  margin-bottom: 30px;
+}
+
+.input-das-tarefas {
+
+  display: grid;
+  place-items: center;
+  gap: 10px;
+
+}
+
+.tarefa-input {
+  flex: 1;
+  width: 90%;
+}
+
+.text-area {
+  position: relative;
+  width: 90%;
+  height: 60px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.div-comentarios {
+  display:inline;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.div-comentarios button {
+  margin-top: 15px;
+}
+
+#mostrarTarefas {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.editando-tarefa {
+  place-items: center;
+ 
+}
+
+button {
+  color: #fff;
+  background-color: #539eee;
+  border-radius: 5px;
+  border-color: #54ead4;
+  padding: 10px;
+  font-size: 15px;
+}
+
+input {
+  font-size: 15px;
+}
+
+ul {
+  padding: 0px;
+}
+
+.lista {
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+  background-color:#ffffee;
+  border-radius: 8px;
+}
+
+
+.categoria {
+  display: grid;
+  margin-top: 30px;
+  place-items: center;
+}
+
+.usuario {
+  display:grid;
+  margin-top: 30px;
+  place-items: center;
+}
+
+
+
+.lista::after {
+  position: absolute;
+  content: url("/img/icons8-lista-de-tarefas.gif");
+  right: 20px;
+  top: 28px;
+}
+
+.lista h2 {
+  margin-bottom: 30px;
+}
+
+.itemlista {
+  display: flexbox;
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 10px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: 19px;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: rgba(177, 239, 245, 1);
+  border-style: solid;
+  background-color: #fcf6ff;
+  color: #111;
+}
+
+.botao {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.botao2 {
+  place-items: center;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  gap: 10px;
+}
+
+.botoes {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+}
